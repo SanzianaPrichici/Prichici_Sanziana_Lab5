@@ -108,7 +108,6 @@
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
-                    <TextBox HorizontalAlignment="Left" Height="31" Margin="104,40,0,0" TextWrapping="Wrap" Text="Customers" VerticalAlignment="Top" Width="107"/>
                     <DataGrid x:Name="ordersDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="99,143,54.333,25.333" RowDetailsVisibilityMode="VisibleWhenSelected" IsSynchronizedWithCurrentItem="True">
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="FirstNameColumn" Binding="{Binding FirstName}" Header="First Name" Width="SizeToHeader"/>
@@ -117,6 +116,8 @@
                             <DataGridTextColumn x:Name="ColorColumn" Binding="{Binding Color}" Header="Color" Width="SizeToHeader"/>
                         </DataGrid.Columns>
                     </DataGrid>
+                    <Label x:Name="lblCustomers" Content="Customers" HorizontalAlignment="Left" Height="27" Margin="99,44,0,0" VerticalAlignment="Top" Width="137"/>
+                    <Label x:Name="lblInventory" Content="Inventory" HorizontalAlignment="Left" Height="27" Margin="323,44,0,0" VerticalAlignment="Top" Width="135"/>
                 </Grid>
             </TabItem>
         </TabControl>
